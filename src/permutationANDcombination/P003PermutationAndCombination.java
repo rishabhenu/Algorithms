@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PermutationAndCombination {
+public class P003PermutationAndCombination {
 
 	public static void main(String...strings){
 		int[] array  = {1,2,3};
