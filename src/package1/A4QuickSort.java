@@ -11,6 +11,13 @@ public class A4QuickSort {
 		input = quickSort(input, 0, input.length-1);
 		System.out.println(Arrays.toString(input));
 		System.out.println("count is "+count);
+		count = 0;
+		input = new int[]{2, 3, 1, 5};
+		input = quickSort(input, 0, input.length-1);
+		System.out.println(Arrays.toString(input));
+		input = new int[]{1, 2, 3, 4};
+		input = quickSort(input, 0, input.length-1);
+		System.out.println(Arrays.toString(input));
 	}
 	
 	private static int[] quickSort(int[] input, int startIndex, int endIndex) {
@@ -18,7 +25,7 @@ public class A4QuickSort {
 		int low = startIndex, high = endIndex;
 		while(low<high) {
 			count++;
-			int middle = -1+(low+high/2), middleElement = input[middle];
+			int middle = (low+high)/2, middleElement = input[middle];
 			while(input[low]<middleElement) {
 				low++;
 			}
